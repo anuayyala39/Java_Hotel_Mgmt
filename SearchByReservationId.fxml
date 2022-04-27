@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFinalProject.SearchByReservationIdController">
+   <children>
+      <TableView fx:id="tableView" layoutX="5.0" layoutY="65.0" prefHeight="200.0" prefWidth="587.0">
+         <columns>
+            <TableColumn fx:id="reservationIdCoulmn" prefWidth="89.33334350585938" text="Reservation ID" />
+            <TableColumn fx:id="nameColumn" prefWidth="133.33334350585938" text="Name" />
+            <TableColumn fx:id="startDateColumn" prefWidth="100.6666259765625" text="Start Date" />
+            <TableColumn fx:id="endDateColumn" prefWidth="91.33331298828125" text="End Date" />
+            <TableColumn fx:id="hotelIdColumn" prefWidth="84.66668701171875" text="Hotel ID" />
+            <TableColumn fx:id="amountColumn" prefWidth="88.00006103515625" text="Amount" />
+         </columns>
+      </TableView>
+      <HBox layoutX="95.0" layoutY="286.0" prefHeight="100.0" prefWidth="410.0" spacing="100.0">
+         <children>
+            <Button fx:id="editButon" mnemonicParsing="false" onAction="#changeSceneToUpdateRecord" text="Edit Record" />
+            <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteButtonListener" text="Delete Record" />
+            <Button fx:id="backButton" mnemonicParsing="false" onAction="#startOverButtonListener" text="Back" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
